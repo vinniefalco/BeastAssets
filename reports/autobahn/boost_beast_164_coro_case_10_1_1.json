@@ -1,0 +1,1287 @@
+{
+   "agent": "Boost.Beast/164-Coro",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 303,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send text message with payload of length 65536 auto-fragmented with <b>autoFragmentSize = 1300</b>.",
+   "droppedByMe": false,
+   "duration": 3,
+   "expectation": "Receive echo'ed text message (with payload as sent and transmitted frame counts as expected). Clean close with normal code.",
+   "expected": {
+      "OK": [
+         [
+            "message",
+            "**************************************************************** ...",
+            false
+         ]
+      ]
+   },
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET / HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/0.7.6-0.10.9\r\nHost: 127.0.0.1:8082\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: dyAg+q0wR8uHU6mkwYTS1w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: upgrade\r\nSec-WebSocket-Accept: 2jSQnyo1tPUmbvswBWHOHHCJisA=\r\nServer: Boost.Beast/164-Coro\r\n\r\n",
+   "id": "10.1.1",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [
+      [
+         "message",
+         "**************************************************************** ...",
+         false
+      ]
+   ],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "1": 1,
+      "8": 1
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "159": 1,
+      "30506": 1,
+      "35040": 1
+   },
+   "started": "2018-03-11T17:36:08.857Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 50,
+      "1": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "240": 1,
+      "544": 1,
+      "1308": 50
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            240,
+            "474554202f20485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f302e372e362d302e31302e390d0a486f7374 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            159,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         1,
+         false,
+         0,
+         "19b9ac5c",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "01fe051419b9ac5c3393867633938676339386763393867633938676339386763393867633938676339386763393867633938676339386763393867633938676 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "d6eb271f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514d6eb271ffcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35fcc10d35 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "407b3512",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514407b35126a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f386a511f38 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "dc262520",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514dc262520f60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0af60c0f0a ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "0660f8fb",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05140660f8fb2c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d12c4ad2d1 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "36c79d04",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051436c79d041cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e1cedb72e ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "f72976bd",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514f72976bddd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97dd035c97 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "b6add42f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514b6add42f9c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe059c87fe05 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "d9a3b4ce",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514d9a3b4cef3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4f3899ee4 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "db1bf7e1",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514db1bf7e1f131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcbf131ddcb ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "61a2e26f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051461a2e26f4b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c8454b88c845 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "51ad9861",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051451ad98617b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b7b87b24b ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "e71a85c8",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514e71a85c8cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2cd30afe2 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "c7aac0f3",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514c7aac0f3ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9ed80ead9 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "fdd689a1",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514fdd689a1d7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38bd7fca38b ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "d758dc5c",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514d758dc5cfd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676fd72f676 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "c9e7951c",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514c9e7951ce3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36e3cdbf36 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "5a18cae1",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05145a18cae17032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb7032e0cb ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "b9ad2c71",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514b9ad2c719387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b9387065b ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "1e348541",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05141e348541341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b341eaf6b ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "c1bd886d",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514c1bd886deb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247eb97a247 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "44126842",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514441268426e3842686e3842686e3842686e3842686e3842686e3842686e3842686e3842686e3842686e3842686e3842686e3842686e3842686e384268 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "b7671381",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514b76713819d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab9d4d39ab ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "73fb6520",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051473fb652059d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a59d14f0a ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "a13db00d",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514a13db00d8b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a278b179a27 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "09960041",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05140996004123bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b23bc2a6b ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "ede478a2",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514ede478a2c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288c7ce5288 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "e7e59597",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514e7e59597cdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbdcdcfbfbd ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "10f79de9",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051410f79de93addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c33addb7c3 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "12f7f2d1",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051412f7f2d138ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb38ddd8fb ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "41cfa7e8",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051441cfa7e86be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc26be58dc2 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "e932d395",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514e932d395c318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bfc318f9bf ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "bf9738fe",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514bf9738fe95bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d495bd12d4 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "e6f1d99b",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514e6f1d99bccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1ccdbf3b1 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "a7c75628",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514a7c756288ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c028ded7c02 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "1f181cd7",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05141f181cd7353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd353236fd ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "324f9e09",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514324f9e091865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b4231865b423 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "23f84144",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe051423f8414409d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e09d26b6e ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "2b0c523e",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05142b0c523e0126781401267814012678140126781401267814012678140126781401267814012678140126781401267814012678140126781401267814 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "cd2db71a",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514cd2db71ae7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30e7079d30 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "a4363fa9",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514a4363fa98e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c15838e1c1583 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "2f2c828f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05142f2c828f0506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a50506a8a5 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "dc523a6b",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514dc523a6bf6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041f6781041 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "641883aa",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514641883aa4e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a9804e32a980 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "7aa068ed",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05147aa068ed508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7508a42c7 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "041cf345",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514041cf3452e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f2e36d96f ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "3dc09714",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe05143dc0971417eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e17eabd3e ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "c6d8ba33",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514c6d8ba33ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019ecf29019 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "cf37b349",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514cf37b349e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963e51d9963 ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            1300,
+            "**************************************************************** ..."
+         ],
+         0,
+         false,
+         0,
+         "e678c227",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1308,
+            "00fe0514e678c227cc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80dcc52e80d ..."
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            536,
+            "**************************************************************** ..."
+         ],
+         0,
+         true,
+         0,
+         "4a2ab356",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            544,
+            "80fe02184a2ab3566000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c6000997c ..."
+         ],
+         false
+      ],
+      [
+         "KL",
+         10
+      ],
+      [
+         "RO",
+         [
+            35040,
+            "817f00000000000100002a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            30506,
+            "2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a ..."
+         ]
+      ],
+      [
+         "RF",
+         [
+            65536,
+            "**************************************************************** ..."
+         ],
+         1,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "12fb2a72",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "888212fb2a721113"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}
